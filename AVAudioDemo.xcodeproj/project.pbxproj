@@ -17,6 +17,10 @@
 		3207501F1F44887E00033BD7 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3207501E1F44887E00033BD7 /* music.mp3 */; };
 		3282BE371F4ECCFE0019F578 /* AVQueuePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3282BE361F4ECCFE0019F578 /* AVQueuePlayerViewController.m */; };
 		32D665A11F4D81E80030DEE5 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D665A01F4D81E80030DEE5 /* AVPlayerViewController.m */; };
+		32F340201F5547DC00F3A86E /* HYPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F3401E1F5547DC00F3A86E /* HYPlayViewController.m */; };
+		32F340211F5547DC00F3A86E /* HYPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F3401F1F5547DC00F3A86E /* HYPlayViewController.xib */; };
+		32F340241F554A4900F3A86E /* HYMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F340231F554A4900F3A86E /* HYMusic.m */; };
+		32F340271F554A5E00F3A86E /* HYPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F340261F554A5E00F3A86E /* HYPlayerTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,13 @@
 		32D6659F1F4D81E80030DEE5 /* AVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
 		32D665A01F4D81E80030DEE5 /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		32D665A31F4D833F0030DEE5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		32F3401D1F5547DC00F3A86E /* HYPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPlayViewController.h; sourceTree = "<group>"; };
+		32F3401E1F5547DC00F3A86E /* HYPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPlayViewController.m; sourceTree = "<group>"; };
+		32F3401F1F5547DC00F3A86E /* HYPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYPlayViewController.xib; sourceTree = "<group>"; };
+		32F340221F554A4900F3A86E /* HYMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMusic.h; sourceTree = "<group>"; };
+		32F340231F554A4900F3A86E /* HYMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMusic.m; sourceTree = "<group>"; };
+		32F340251F554A5E00F3A86E /* HYPlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPlayerTool.h; sourceTree = "<group>"; };
+		32F340261F554A5E00F3A86E /* HYPlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPlayerTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +82,7 @@
 		320750031F44827000033BD7 /* AVAudioDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3207501E1F44887E00033BD7 /* music.mp3 */,
+				32F3401C1F5547CF00F3A86E /* PlayerDemo */,
 				32D6659F1F4D81E80030DEE5 /* AVPlayerViewController.h */,
 				32D665A01F4D81E80030DEE5 /* AVPlayerViewController.m */,
 				3207501B1F4482DA00033BD7 /* AVAudioPlayerViewController.h */,
@@ -82,10 +93,6 @@
 				320750081F44827000033BD7 /* AppDelegate.m */,
 				3207500A1F44827000033BD7 /* ViewController.h */,
 				3207500B1F44827000033BD7 /* ViewController.m */,
-				3207500D1F44827000033BD7 /* Main.storyboard */,
-				320750101F44827000033BD7 /* Assets.xcassets */,
-				320750121F44827000033BD7 /* LaunchScreen.storyboard */,
-				320750151F44827000033BD7 /* Info.plist */,
 				320750041F44827000033BD7 /* Supporting Files */,
 			);
 			path = AVAudioDemo;
@@ -94,6 +101,11 @@
 		320750041F44827000033BD7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3207500D1F44827000033BD7 /* Main.storyboard */,
+				320750101F44827000033BD7 /* Assets.xcassets */,
+				320750121F44827000033BD7 /* LaunchScreen.storyboard */,
+				320750151F44827000033BD7 /* Info.plist */,
+				3207501E1F44887E00033BD7 /* music.mp3 */,
 				320750051F44827000033BD7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -105,6 +117,20 @@
 				32D665A31F4D833F0030DEE5 /* AVKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32F3401C1F5547CF00F3A86E /* PlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				32F340251F554A5E00F3A86E /* HYPlayerTool.h */,
+				32F340261F554A5E00F3A86E /* HYPlayerTool.m */,
+				32F340221F554A4900F3A86E /* HYMusic.h */,
+				32F340231F554A4900F3A86E /* HYMusic.m */,
+				32F3401D1F5547DC00F3A86E /* HYPlayViewController.h */,
+				32F3401E1F5547DC00F3A86E /* HYPlayViewController.m */,
+				32F3401F1F5547DC00F3A86E /* HYPlayViewController.xib */,
+			);
+			name = PlayerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +166,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 47HD5S74D3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -169,6 +200,7 @@
 				3207501F1F44887E00033BD7 /* music.mp3 in Resources */,
 				320750141F44827000033BD7 /* LaunchScreen.storyboard in Resources */,
 				320750111F44827000033BD7 /* Assets.xcassets in Resources */,
+				32F340211F5547DC00F3A86E /* HYPlayViewController.xib in Resources */,
 				3207500F1F44827000033BD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,11 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F340201F5547DC00F3A86E /* HYPlayViewController.m in Sources */,
 				32D665A11F4D81E80030DEE5 /* AVPlayerViewController.m in Sources */,
 				3207500C1F44827000033BD7 /* ViewController.m in Sources */,
 				3282BE371F4ECCFE0019F578 /* AVQueuePlayerViewController.m in Sources */,
 				3207501D1F4482DA00033BD7 /* AVAudioPlayerViewController.m in Sources */,
+				32F340271F554A5E00F3A86E /* HYPlayerTool.m in Sources */,
 				320750091F44827000033BD7 /* AppDelegate.m in Sources */,
+				32F340241F554A4900F3A86E /* HYMusic.m in Sources */,
 				320750061F44827000033BD7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

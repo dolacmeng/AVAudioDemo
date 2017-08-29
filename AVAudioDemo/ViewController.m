@@ -17,8 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titleArray = @[@"AVAudioPlayer",@"AVPlayer",@"AVQueuePlayer"];
-    self.vcArray = @[@"AVAudioPlayerViewController",@"AVPlayerViewController",@"AVQueuePlayerViewController"];
+    self.titleArray = @[@"AVAudioPlayer",@"AVPlayer",@"AVQueuePlayer",@"播放页面"];
+    self.vcArray = @[@"AVAudioPlayerViewController",@"AVPlayerViewController",@"AVQueuePlayerViewController",@"HYPlayViewController"];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
